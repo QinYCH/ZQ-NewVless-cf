@@ -63,7 +63,7 @@
 3. 点击右上角 **⚙️** 按钮进入配置管理
 4. 配置你的代理设置：
    - **UUID**：强烈建议修改，用于身份验证
-   - **优选域名**：可选，默认worker域名
+   - **优选域名**：可选，默认worker域名(可从`https://ipspeed.520jacky.dpdns.org/index.html`获取)
    - **端口**：可选，默认443(可填443系端口:443、2053、2083、2087、2096、8443)
    - **SOCKS5代理**：可选，格式 `user:pass@host:port`或者`host:port`
    - **ProxyIP**：可选，格式 `host:port`或者`host`
