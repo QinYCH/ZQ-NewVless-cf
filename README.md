@@ -64,7 +64,7 @@
 4. 配置你的代理设置：
    - **UUID**：强烈建议修改，用于身份验证
    - **优选域名**：可选，默认worker域名
-   - **端口**：可选，默认443
+   - **端口**：可选，默认443(可填443系端口:443、2053、2083、2087、2096、8443)
    - **SOCKS5代理**：可选，格式 `user:pass@host:port`或者`host:port`
    - **ProxyIP**：可选，格式 `host:port`或者`host`
    - **回退检测时间**：可选，100-10000毫秒，默认1000(如果某个节点不通但是socks5或proxyip有效，可调节此值)
@@ -109,7 +109,7 @@
 
 ## 🔗 相关链接
 
-- [workers-vless](https://github.com/ymyuuu/workers-vless)
+[workers-vless](https://github.com/ymyuuu/workers-vless)
 ## ☕️ 请我喝杯奶茶
 
 如果本项目对你有帮助，欢迎请我喝杯奶茶 
