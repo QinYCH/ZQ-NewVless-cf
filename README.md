@@ -15,47 +15,38 @@
 
 ## 🚀 部署步骤
 
-### 1. 一键部署
+### 1. 部署到Workers
 
-#### 1. worker部署 
-点击下方按钮即可一键部署到 Cloudflare Workers：
-[![Deploy to Cloudflare Workers](https://deploy.workers.cloudflare.com/button?projectName=NewVle)](https://deploy.workers.cloudflare.com/?url=https://github.com/BAYUEQI/ZQ-NewVless)
-#### 2. page部署 
-点击下方按钮即可一键部署到 Cloudflare Pages：
-[![Deploy to Cloudflare Pages](https://deploy.pages.cloudflare.com/button?projectName=NewVle)](https://deploy.pages.cloudflare.com/?url=https://github.com/BAYUEQI/ZQ-NewVless)
+1. 登录 Cloudflare 控制台
+2. 左侧进入 **Workers 和 Pages**
+3. 点击 **创建应用程序** → 选择 **创建 Worker**
+4. 输入 Worker 名称并创建
+5. 进入在线编辑器：
+   - 删除默认模板代码
+   - 打开本仓库的 `_worker.js`，复制全部内容
+   - 粘贴到 Cloudflare 在线编辑器中
+6. 点击右上角 **保存并部署**
+7. 创建 KV 命名空间：
+   - 左侧进入 **存储和数据库**，点击**KV**
+   - 点击 **创建命名空间**，名称建议：`NewVless`
+8. 在 Worker 详情页绑定 KV：
+   - 打开 Worker → **设置** → **变量** → **KV 命名空间绑定** → **添加绑定**
+   - 变量名称：`NewVless`
+   - 选择刚创建的 KV 命名空间
+   - 点击 **保存**
+9. 绑定自定义域名(`注意:不能使用workers默认域名`)
 
-### 2. 创建Worker
-
-1. 登录Cloudflare控制台
-2. 点击左侧菜单 **Workers & Pages**
-3. 点击 **创建应用程序**
-4. 选择 **创建Worker**
-5. 输入Worker名称
-6. 点击 **创建Worker**
-
-### 3. 配置代码
-
-1. 在Worker编辑器中，删除默认代码
-2. 复制 `_worker.js` 文件中的所有代码
-3. 粘贴到编辑器中
-4. 点击 **保存并部署**
-
-### 3. 创建KV空间
-
-1. 左侧菜单进入 **Workers & Pages → KV**（或在顶部搜索“KV”）
-2. 点击 **创建命名空间**（Create namespace）
-3. 为命名空间起一个名字`NewVless`
-4. 点击 **创建**（Create） 完成
-
-### 4. 绑定KV存储
-
-1. 在Worker详情页面，点击 **设置** 标签
-2. 找到 **变量** 部分，点击 **KV 命名空间绑定**
-3. 点击 **添加绑定**
-4. 设置：
-   - **变量名称**：`NewVless`
-   - **KV 命名空间**：选择你刚创建的命名空间
-5. 点击 **保存**
+### 2. 部署到Pages
+1. [下载 ZIP包](https://codeload.github.com/BAYUEQI/ZQ-NewVless/zip/refs/heads/main)
+2. 登录 Cloudflare → **Workers 和 Pages** → **创建应用程序** → 选择 **创建 Pages**
+3. 选择 **直接上传**，上传下载的 ZIP 包,直接保存并部署 
+4. 创建 KV 命名空间：
+   - 左侧进入 **存储和数据库**，点击**KV**
+   - 点击 **创建命名空间**，名称建议：`NewVless`
+5. 绑定 KV：进入 Pages 项目 → **设置** → **变量** → **KV 命名空间绑定** → **添加绑定**
+   - 变量名称：`NewVless`
+   - 选择已创建的 KV 命名空间
+6. 再次上传 ZIP 包并部署，接着访问域名(`可以绑定自定义域名，也可使用pages默认域名`)
 
 
 ## 📖 使用说明
