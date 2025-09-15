@@ -15,10 +15,14 @@
 
 ## 🚀 部署步骤
 
-### 1. 准备工作
+### 1. 一键部署
 
-1. 注册 [Cloudflare](https://www.cloudflare.com/) 账号
-2. 准备一个域名（可选，也可以使用Workers默认域名）
+#### 1. worker部署 
+点击下方按钮即可一键部署到 Cloudflare Workers：
+[![Deploy to Cloudflare Workers](https://deploy.workers.cloudflare.com/button?projectName=NewVle)](https://deploy.workers.cloudflare.com/?url=https://github.com/BAYUEQI/ZQ-NewVless)
+#### 2. page部署 
+点击下方按钮即可一键部署到 Cloudflare Pages：
+[![Deploy to Cloudflare Pages](https://deploy.pages.cloudflare.com/button?projectName=NewVle)](https://deploy.pages.cloudflare.com/?url=https://github.com/BAYUEQI/ZQ-NewVless)
 
 ### 2. 创建Worker
 
